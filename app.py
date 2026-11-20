@@ -101,8 +101,6 @@ def save_state(taken):
 def admin_password():
     try:
         return st.secrets["ADMIN_PASSWORD"]
-    except Exception:
-        return os.environ.get("ADMIN_PASSWORD", "odtu1956")
 
 
 # ---------------------------------------------------------------------------
